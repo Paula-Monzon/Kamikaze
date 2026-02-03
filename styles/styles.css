@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Bebas Neue;
+}
+
+body{
+   height: 150vh;
+   width: auto;
+}
+
+.header{
+   height: 30vh;
+   width: auto;
+   background-color: violet;
+   position: sticky;
+   top: 0;
+   /*display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 5px;*/
+}
+
+.logo1{
+   height: 25vh;
+   width: auto;
+   padding: 10px;
+}
+
+ul{
+   width: auto;
+   font-size: 20px;
+   list-style: none;
+}
+
+li{
+   margin: 0 5px;
+}
+
+.main{
+   height: 120vh;
+   width: auto;
+   background-color: white;
+
+}
+.section-main{
+   height: 110vh;
+   width: auto;
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr 1fr 1fr;
+   justify-items: center;
+   align-items: center;
+}
+
+h2{
+   height: 20vh;
+   width: auto;
+   text-decoration: none;
+   font-size: 50px;
+   font-weight: 60px;
+   color: black;
+   grid-column: 2 / 3;
+   grid-row: 1 / 2;
+}
+
+p{
+   font-size: 25px;
+   font-weight: 25px;
+   height: 20vh;
+   width: auto;
+   grid-column: 1 / 4;
+   grid-row: 2 / 3;
+   padding: 0 10px;
+}
+
+.chatgpt{
+   height: 60vh;
+   width: auto;
+   border: 5px solid black;
+   border-radius: 5px;
+   padding: 5px;
+   grid-column: 2 / 3;
+   grid-row: 3 / 4;
+}
+
+.kmk2{
+   height: 60vh;
+   width: auto;
+   border: 5px solid black;
+   border-radius: 5px;
+   padding: 5px;
+   grid-column: 1 / 2;
+   grid-row: 3 / 4;
+}
+
+.kmk3{
+   height: 60vh;
+   width: auto;
+   border: 5px solid black;
+   border-radius: 5px;
+   padding: 5px;
+   grid-column: 3 / 4;
+   grid-row: 3 / 4;
+}
+
+footer{
+   height: 30vh;
+   width: auto;
+   background-color: violet;
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr 1fr 1fr;
+   justify-items: center;
+   align-items: center;
+   justify-content: space-between;
+   align-content: space-around;
+}
+
+h3{
+   font-size: 25px;
+   color: black;
+   font-weight: 100;
+   grid-column: 2 / 3;
+   grid-row: 1 / 3;
+}
+
+.navf ul{
+   height: 20vh;
+   width: auto;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+   align-content: space-between;
+}
+
+.logo-rswsp{
+   height: 10vh;
+   width: auto;
+   position: fixed;
+   bottom: 40px;
+   right: 40px;
+}
+
+.logo-rs{
+   height: 8vh;
+   width: auto;
+}
+
+/* Tienda*/
+
+.main-tienda{
+   height: 125vh;
+   width: auto;
+}
+
+.section-tienda{
+   height: 120vh;
+   width: auto;
+   list-style: none;
+   padding: 10px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr 1fr;
+   justify-items: center;
+   align-items: start;
+   justify-content: space-between;
+   align-content: space-around;
+}
+
+.img-tienda{
+   height: 45vh;
+   width: auto;
+   padding: 10px;
+   border: 2px solid black;
+   border-radius: 10px;
+}
+
+.abanico{
+   height: 5vh;
+   width: auto;
+   font-size: 30px;
+   font-weight: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.precio1{
+   height: 5vh;
+   width: auto;
+   font-size: 20px;
+   font-weight: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.gafas{
+   height: 5vh;
+   width: auto;
+   font-size: 30px;
+   font-weight: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.precio2{
+   height: 5vh;
+   width: auto;
+   font-size: 20px;
+   font-weight: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sombrero{
+   height: 5vh;
+   width: auto;
+   font-size: 30px;
+   font-weight: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.precio3{
+   height: 5vh;
+   width: auto;
+   font-size: 20px;
+   font-weight: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.gorra{
+   height: 5vh;
+   width: auto;
+   font-size: 30px;
+   font-weight: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.precio4{
+   height: 5vh;
+   width: auto;
+   font-size: 20px;
+   font-weight: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.medias{
+   height: 5vh;
+   width: auto;
+   font-size: 30px;
+   font-weight: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.precio5{
+   height: 5vh;
+   width: auto;
+   font-size: 20px;
+   font-weight: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.morral{
+   height: 5vh;
+   width: auto;
+   font-size: 30px;
+   font-weight: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.precio6{
+   height: 5vh;
+   width: auto;
+   font-size: 20px;
+   font-weight: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* sobre nosotros*/
+.nh{
+   height: 30vh;
+   width: auto;
+   font-size: 40px;
+   font-weight: 40px;
+   grid-column: 2 / 3;
+   grid-row: 1 / 2;
+   justify-content: center;
+   align-content: center;
+}
+
+.kmk1{
+   height: 50vh;
+   width: auto;
+   padding: 5px;
+   border: 5px solid black;
+   border-radius: 10px;
+   grid-column: 2 / 3;
+   grid-row: 2 / 3;
+}
+
+.psn{
+   height: 40vh;
+   width: auto;
+   grid-column: 1 / 4;
+   grid-row: 3 / 4;
+   justify-content: center;
+   align-content: center;
+}
+
+/*preguntas frecuentes*/
+
+.mainpf{
+   height: 120vh;
+   width: auto;
+   background-color: white;
+
+}
+.section-mainpf{
+   height: 110vh;
+   width: auto;
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   justify-items: center;
+   align-items: center;
+}
+
+.h2a{
+   height: 10vh;
+   width: auto;
+   font-size: 40px;
+   font-weight: 40px;
+   grid-column: 2 / 4;
+   grid-row: 1 / 2;
+   justify-content: center;
+   align-content: center;
+}
+
+.ulpf{
+   height: 40vh;
+   width: auto;
+   grid-column: 1 / 4;
+   grid-row: 2 / 4;
+}
+
+.h3pf{
+   font-size: 30px;
+   font-weight: 30px;
+   padding: 0 5px;
+}
+
+.ppf{
+   font-size: 20px;
+   font-weight: 20px;
+   padding: 0 5px;
+}
+
+/*contacto*/
+
+.sectioncontact{
+   height: 120vh;
+   width: auto;
+   background-color: white;
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   justify-content: center;
+   align-content: center;
+}
+
+.h1cont{
+   height: 20vh;
+   width: auto;
+   font-size: 40px;
+   padding: 10px;
+   grid-column: 2 / 4;
+   grid-row: 1 / 2;
+   align-content: center;
+
+}
+
+.h2cont{
+   height: 20vh;
+   width: auto;
+   font-size: 20px;
+   padding: 10px;
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+   align-content: end;
+}
+
+.form{
+   height: 20vh;
+   width: auto;
+   padding: 10px;
+   grid-column: 1 / 5;
+   grid-row: 2 / 3;
+   justify-content: center;
+}
+
+.frame{
+   padding: 40px;
+   grid-column: 1 / 3;
+   grid-row: 3 / 4;
+}
+
+.frame2{
+   padding: 40px;
+   grid-column: 3 / 5;
+   grid-row: 3 / 4;
+}
+
+/*tablet*/
+
+@media (min-width: 431px) and (max-width: 800px) {
+   .header{
+      height: auto;
+      width: 100vw;
+   }
+
+   .main{
+      height: 120vh;
+      width: auto;
+   }
+
+   .section-main{
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      padding: 5px;
+   }
+
+   p{
+      font-size: 15px;
+      grid-row: 2 / 3;
+   }
+
+   .chatgpt{
+      grid-row: 4 / 5;
+   }
+
+   .kmk2{
+      grid-row: 4 / 5;
+   }
+
+   .kmk3{
+      grid-row: 4 / 5;
+   }
+
+   /*contacto*/
+
+   .sectioncontact{
+      height: 180vh;
+      width: 120vw;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .form{
+      height: 100vh;
+      width: 100vw;
+      justify-content: center;
+
+   }
+
+   .frame{
+      padding: 20px;
+      align-content: center;
+   }
+
+   .frame2{
+      padding: 20px;
+   }
+
+   /*Preguntas frecuentes*/
+
+   .mainpf{
+      height: 130vh;
+      width: 100vw;
+      gap: 10px;
+   }
+
+.h2a{
+   height: 10vh;
+   width: auto;
+   font-size: 30px;
+   font-weight: 30px;
+}
+
+.ulpf{
+   height: 40vh;
+   width: auto;
+}
+
+.h3pf{
+   font-size: 30px;
+   font-weight: 30px;
+   padding: 0 5px;
+}
+
+.ppf{
+   font-size: 15px;
+   font-weight: 15px;
+   padding: 0 5px;
+}
+}
+
+/*mobile*/
+@media (min-width: 320px) and (max-width: 430px) {
+   .header{
+      height: auto;
+      width: 170vw;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5px;
+   }
+   .main{
+      height: 230vh;
+   }
+   
+   .section-main{
+      height: 220vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      }
+
+   .nh{
+      height: 30vh;
+      width: 170vw;
+      font-size: 40px;
+      font-weight: 40px;
+      text-align: center;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      justify-content: center;
+      }
+
+   .kmk1{
+      height: auto;
+      width: 80vw;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+   }
+   
+   .footer{
+      height: 30vh;
+      width: 170vw;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      justify-content: space-between;
+      align-content: space-around;
+   }
+
+}
