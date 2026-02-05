@@ -1,0 +1,47 @@
+@use "variables" as v;
+
+.header {
+    height: 30vh;
+    width: auto;
+    background-color: v.$Violeta;
+    position: sticky;
+    top: 0;
+
+    .navbar-nav{
+        background-color: v.$Violeta;
+        .nav-link .nav-link.active{
+            color: v.$Negro;
+        }
+        .nav-link.active{
+            border: 1px solid v.$Negro;
+            border-radius: 5px;
+            }
+        .nav-link:hover{
+            animation: invert 2s forwards;
+        }
+    }
+
+    .logo1 {
+        height: 25vh;
+        width: auto;
+        padding: 10px;
+    }
+
+    ul {
+        width: auto;
+        font-size: 20px;
+        list-style: none;
+    }
+
+    li {
+        margin: 0 5px;
+    }
+}
+
+@keyframes invert{
+    100%{
+        background-color: v.$Blanco;
+        color: v.$Negro;
+        border-radius: 5px;
+    }
+}

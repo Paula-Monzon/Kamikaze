@@ -1,0 +1,69 @@
+@use "variables" as v;
+
+.main{
+    padding: 0px;
+
+    .section-main{
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        .nh{
+            height: 30vh;
+            width: auto;
+            font-size: 35px;
+            font-weight: 35px;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .kmk1{
+            height: 60vh;
+            width: auto;
+            padding: 5px;
+            border: 5px solid v.$Negro;
+            border-radius: 10px;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .psn{
+            height: 40vh;
+            width: auto;
+            font-size: 18px;
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+    @include v.tablet{
+        .section-main{
+            .nh{
+                font-size: 30px;
+            }
+            .kmk1{
+                height: 50vh;
+            }
+            .psn{
+                font-size: 13px;
+            }
+        }
+    }
+    @include v.mobile{
+        .section-main{
+            .nh{
+                font-size: 20px;
+            }
+            .kmk1{
+                height: 30vh;
+            }
+            .psn{
+                font-size: 10px;
+            }
+        }
+    }
+}

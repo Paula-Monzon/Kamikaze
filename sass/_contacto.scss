@@ -1,0 +1,113 @@
+@use "variables" as v;
+
+.sectioncontact {
+    height: 120vh;
+    width: auto;
+    background-color: v.$Blanco;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+
+    .h1cont {
+        height: 20vh;
+        width: auto;
+        font-size: 40px;
+        padding: 10px;
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        align-content: center;
+    }
+
+    .h2cont {
+        height: 20vh;
+        width: auto;
+        font-size: 20px;
+        padding: 10px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        align-content: end;
+    }
+
+    .form{
+        height: 20vh;
+        width: auto;
+        padding: 10px;
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        justify-content: center;
+    }
+
+    .frame{
+        padding: 40px;
+        grid-column: 2 / 4;
+        grid-row: 2 / 5;
+        align-content: center;
+        .iframe1{
+            height: 380px;
+            width: 650px;
+        }
+    }
+
+    @include v.tablet{
+        .h1cont{
+            font-size: 30px;
+            grid-column: 2 / 4;
+            text-align: center;
+        }
+        .h2cont{
+            font-size: 20px;
+            text-align: center;
+
+        }
+        .form{
+            height: 15vh;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+            grid-column: 1 / 5;
+            grid-row: 2 / 3;
+            input{
+                height: 30px;
+                width: 50px;
+            }
+        }
+        .frame{
+            padding: 10px;
+            grid-column: 2 / 4;
+            grid-row: 3 / 5;
+            .iframe1{
+                height: 50vh;
+                width: 50vw;
+            }
+        }
+    }
+    @include v.mobile{
+        .h1cont{
+            font-size: 20px;
+            text-align: center;
+        }
+        .h2cont{
+            font-size: 15px;
+        }
+        .form{
+            height: 10vh;
+            font-size: 10px;
+            input{
+                height: 20px;
+                width: 30px;
+            }
+        }
+        .frame{
+            grid-column: 1 / 5;
+            grid-row: 3 / 5;
+            padding: 10px;
+            .iframe1{
+                height: 250px;
+                width: 350px;
+            }
+        }
+    }
+}

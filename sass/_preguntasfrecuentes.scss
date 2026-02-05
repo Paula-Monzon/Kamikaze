@@ -1,0 +1,73 @@
+@use "variables" as v;
+
+.mainpf {
+    height: 120vh;
+    width: auto;
+    background-color: v.$Blanco;
+
+    .section-mainpf {
+        height: 110vh;
+        width: auto;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+
+        .h2a {
+            height: 10vh;
+            width: auto;
+            font-size: 40px;
+            font-weight: 40px;
+            grid-column: 2 / 4;
+            grid-row: 1 / 2;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+
+    .ulpf{
+        height: 40vh;
+        width: auto;
+        list-style: none;
+        grid-column: 1 / 5;
+        grid-row: 1 / 5;
+
+        .h3pf {
+            font-size: 30px;
+            padding: 0 5px;
+        }
+        .ppf {
+            font-size: 20px;
+            padding: 0 5px;
+        }
+    }
+    @include v.tablet{
+        .ulpf{
+            .h3pf{
+            padding: 10px;
+            margin: 5px;
+        }
+            .ppf{
+            font-size: 15px;
+            width: auto;
+        }
+        }
+    }
+    @include v.mobile{
+        .section-mainpf{
+            .h2a{
+                font-size: 25px;
+            }
+        }
+        .ulpf{
+            .h3pf{
+                font-size: 20px;
+            }
+            .ppf{
+                font-size: 15px;
+            }
+        }
+    }
+}

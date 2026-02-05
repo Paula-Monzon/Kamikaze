@@ -1,0 +1,121 @@
+@use "variables" as v;
+
+.main{
+    height: 120vh;
+    width: auto;
+    background-color: v.$Blanco;
+
+    .section-main{
+        height: 110vh;
+        width: auto;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+
+        .h2{
+            height: 20vh;
+            width: auto;
+            text-decoration: none;
+            font-size: 50px;
+            font-weight: 60px;
+            color: v.$Negro;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 20px;
+            height: 20vh;
+            width: auto;
+            grid-column: 1 / 4;
+            grid-row: 1 / 3;
+            padding: 0 10px;
+        }
+
+        .chatgpt{
+            height: 60vh;
+            width: auto;
+            border: 5px solid v.$Negro;
+            border-radius: 5px;
+            padding: 5px;
+            grid-column: 2 / 3;
+            grid-row: 2 / 4;
+        }
+
+        .kmk2{
+            height: 60vh;
+            width: auto;
+            border: 5px solid v.$Negro;
+            border-radius: 5px;
+            padding: 5px;
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+        }
+
+        .kmk3{
+            height: 60vh;
+            width: auto;
+            border: 5px solid v.$Negro;
+            border-radius: 5px;
+            padding: 5px;
+            grid-column: 3 / 4;
+            grid-row: 2 / 4;
+        }
+    }
+    @include v.tablet{
+        .section-main{
+            height: 130vh;
+
+            .h2{
+                height: 20vh;
+                width: auto;
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+            .chatgpt{
+                height: 40vh;
+                width: auto;
+            }
+            .kmk2{
+                height: 40vh;
+                width: auto;
+            }
+            .kmk3{
+                height: 40vh;
+                width: auto;
+            }
+        }
+    }
+    @include v.mobile{
+        .section-main{
+            height: 120vh;
+            .h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .chatgpt{
+                height: 25vh;
+                width: auto;
+                border: 2px solid v.$Negro;
+            }
+            .kmk2{
+                height: 25vh;
+                width: auto;
+                border: 2px solid v.$Negro;
+            }
+            .kmk3{
+                height: 25vh;
+                width: auto;
+                border: 2px solid v.$Negro;
+            }
+        }
+    }
+}
